@@ -56,10 +56,8 @@ class StatusCell: BaseCell {
         addSubview(dividerView)
         
         addConstraintsWithFormat(format: "H:|[v0]|", views: statusTextView)
-        addConstraintsWithFormat(format: "V:|[v0]|", views: statusTextView)
-        
         addConstraintsWithFormat(format: "H:|-8-[v0]|", views: dividerView)
-        addConstraintsWithFormat(format: "V:|[v0(1)]|", views: dividerView)
+        addConstraintsWithFormat(format: "V:|[v0][v1(1)]|", views: statusTextView, dividerView)
     }
 }
 
